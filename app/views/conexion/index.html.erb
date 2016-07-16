@@ -1,0 +1,24 @@
+<h1 align="center">Alumnos Inscritos</h1>
+<% @alumno.each do |alumno| %>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+	Nombre: <%= alumno.nombre %>
+	</div>
+	<table class="table">
+		  <tr>
+		    <td>#</td>
+		   	<td>Carne</td>
+		    <td>Curso</td>
+		    <td>Carrera</td>
+		  </tr>
+		    <tr>
+		    <td><%= alumno.id %></td>
+		    <td><%= alumno.carne%></td>
+		    <td><%= alumno.curso%></td>
+		    <td><%= alumno.carrera%></td>
+		  </tr>
+	</table>
+
+</div>
+<%end%>

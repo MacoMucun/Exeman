@@ -1,0 +1,21 @@
+<h1>ingresar datos</h1>
+<%= form_for @alumno, url: conexion_index_path do |f| %>
+	<div class="field">
+		<%= f.text_field :nombre, placeholder: "Nombre"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :carne, placeholder: "Numero_Carné"%>
+	</div>
+
+	<div class="field">
+		<%= f.text_field :curso, placeholder: "Nombre_curso"%>
+	</div>
+
+	<div class="field">
+		<%= f.text_field :carrera, placeholder: "Nombre_carrera"%>
+	</div>
+	<div class="class">
+		<%= f.submit "ingresar"%>
+	</div>
+
+<% end %>
